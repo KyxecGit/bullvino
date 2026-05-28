@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BULLVINO'S | Premium Brazilian Steakhouse</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Experience Bullvino's: A premium dark luxury temple of authentic Brazilian Churrasco. Enjoy fire-roasted cuts carved tableside and masterfully crafted cocktails.">
+  <meta name="keywords" content="Bullvino's, Steakhouse, Churrascaria, Luxury Dining, Interactive Menu">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@200;400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cinematic Branding Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring">
+    <span class="cursor-text" id="cursor-text"></span>
+  </div>
+
+  <!-- FIXED NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="brand-title">BULLVINO'S</span>
+        <span class="brand-subtitle">BRAZILIAN STEAK HOUSE</span>
+      </a>
+      <nav class="nav-links" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#experience" class="nav-link">Our Story</a>
+        <a href="#menu" class="nav-link">The Menu</a>
+        <a href="#reserve" class="nav-link">Reservations</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#reserve" class="btn btn-reserve">RESERVE A TABLE</a>
+        <button class="burger-menu" id="burger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="hero-video-container">
+      <!-- Fallback image/loop matching our luxury dark fire concept -->
+      <video class="hero-video" autoplay loop muted playsinline poster="assets/images/chef_experience.png">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-fire-burning-in-a-black-background-40019-large.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    
+    <!-- EMBERS AND SMOKE PHYSICS CANVAS -->
+    <canvas id="hero-particles" class="hero-particles-canvas"></canvas>
+    
+    <div class="hero-content">
+      <p class="hero-tagline-glow">AUTHENTIC GAUCHO TRADITION</p>
+      <h1 class="hero-title" id="hero-title">BULLVINO'S</h1>
+      <p class="hero-subtitle" id="hero-subtitle">THE ART OF FIRE & FLESH</p>
+      <div class="hero-divider"></div>
+      <a href="#menu" class="btn btn-primary" id="explore-menu-btn">EXPLORE THE MENU</a>
+    </div>
+
+    <a href="#experience" class="scroll-down-arrow" id="scroll-arrow">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+    </a>
+  </section>
+
+  <!-- EXPERIENCE STORY SECTION -->
+  <section class="section-container experience-grid" id="experience">
+    <div class="experience-image-wrapper" id="exp-img-container">
+      <div class="parallax-img-box">
+        <img src="assets/images/chef_experience.png" alt="Chef Gaucho roasting Picanha" class="parallax-img" id="exp-chef-img">
+      </div>
+      <div class="accent-border-frame"></div>
+    </div>
+    
+    <div class="experience-text" id="exp-text-container">
+      <span class="section-tag">OUR HERITAGE</span>
+      <h2 class="section-title">THE GAUCHO WAY OF LIFE</h2>
+      <div class="title-line"></div>
+      <p class="experience-quote">"Fire is our language, and the sword is our canvas."</p>
+      <p class="experience-description">
+        Born in the rugged southern plains of Brazil, the legendary Gaucho culture is defined by its deep relationship with fire, iron, and prime livestock. At Bullvino's, we bring this theatrical heritage directly to your table. Our passadores carve continuous skewers of prime seasoned meats cooked over open natural-wood flames, preserving an ancestral roasting art dating back three centuries.
+      </p>
+      <div class="experience-signature">
+        <span class="sig-name">Chef Roberto Silva</span>
+        <span class="sig-title">Master Passador & Culinary Director</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TABS MENU -->
+  <section class="menu-section" id="menu">
+    <div class="section-container">
+      <div class="menu-header">
+        <span class="section-tag text-center">SENSORY PORTFOLIO</span>
+        <h2 class="section-title text-center">THE HARVEST</h2>
+        <div class="title-line center"></div>
+        <p class="section-subtitle">Select a category below to explore tableside carvings, exclusive cuts, and liquid alchemy.</p>
+      </div>
+
+      <!-- Menu Category Tabs -->
+      <div class="menu-tabs">
+        <button class="menu-tab-btn active" data-category="churrascaria">THE RODIZIO EXPERIENCE</button>
+        <button class="menu-tab-btn" data-category="meat-cuts">LIVE-FIRE MEAT CUTS</button>
+        <button class="menu-tab-btn" data-category="cocktails">SIGNATURE COCKTAILS</button>
+      </div>
+
+      <!-- Dynamic Cards Grid -->
+      <div class="menu-grid" id="menu-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVE A SEAT SECTION -->
+  <section class="reserve-section" id="reserve">
+    <div class="reserve-bg-blur"></div>
+    <div class="section-container">
+      <div class="reserve-card" id="reserve-box">
+        <div class="gold-corner top-left"></div>
+        <div class="gold-corner top-right"></div>
+        <div class="gold-corner bottom-left"></div>
+        <div class="gold-corner bottom-right"></div>
+        
+        <span class="booking-tag" style="display: block; text-align: center; font-family: var(--font-sans); font-size: 10px; font-weight: 800; letter-spacing: 3px; color: var(--accent-gold); margin-bottom: 12px;">SECURE YOUR PLACE</span>
+        <h2 class="reserve-title">RESERVE A SEAT BY THE HEARTH</h2>
+        <p class="reserve-subtitle">Tableside gaúcho service operates in highly limited seating tiers. Pre-book your slot to confirm placement near the open wood flames.</p>
+        
+        <form class="reserve-form" onsubmit="event.preventDefault(); alert('Ritual reserved! Your passador awaits.');">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-name">FULL NAME</label>
+              <input type="text" id="res-name" required placeholder="Alexander Mercer">
+            </div>
+            <div class="form-group">
+              <label for="res-date">DATE OF RITUAL</label>
+              <input type="date" id="res-date" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-guests">SEATING TIER / GUESTS</label>
+              <select id="res-guests">
+                <option value="2">2 Guests (Hearth-Side)</option>
+                <option value="4">4 Guests (Center Block)</option>
+                <option value="6">6 Guests (Rotisserie Alcove)</option>
+                <option value="8+">8+ Guests (Gaucho VIP Room)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="res-time">HOUR</label>
+              <select id="res-time">
+                <option value="18:00">06:00 PM</option>
+                <option value="19:30">07:30 PM</option>
+                <option value="21:00">09:00 PM</option>
+              </select>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-submit-reserve">CONFIRM RITUAL REGISTRATION</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="footer-section">
+    <div class="section-container footer-grid">
+      
+      <!-- Col 1: About -->
+      <div class="footer-col footer-about">
+        <a href="#" class="footer-logo">
+          <span class="brand-title">BULLVINO'S</span>
+          <span class="brand-subtitle">BRAZILIAN STEAK HOUSE</span>
+        </a>
+        <p class="footer-description">
+          An ultra-premium Churrascaria combining centuries of Gaucho rotisserie fire heritage with contemporary culinary art and liquid alchemy.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon">IG</a>
+          <a href="#" class="social-icon">FB</a>
+          <a href="#" class="social-icon">YT</a>
+        </div>
+      </div>
+
+      <!-- Col 2: Contact -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">THE HEARTH</h3>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <span>📍</span>
+            <span>739 Grand Avenue, Saint Paul, MN 55105</span>
+          </li>
+          <li class="contact-item">
+            <span>📞</span>
+            <span>+1 (651) 224-0019</span>
+          </li>
+          <li class="contact-item">
+            <span>✉️</span>
+            <span>experience@bullvinos.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Hours -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">HOURS</h3>
+        <ul class="hours-list">
+          <li class="hours-item">
+            <span class="day">Mon – Thu</span>
+            <span class="time">05:00 PM – 10:00 PM</span>
+          </li>
+          <li class="hours-item">
+            <span class="day">Friday</span>
+            <span class="time">04:30 PM – 10:30 PM</span>
+          </li>
+          <li class="hours-item">
+            <span class="day">Saturday</span>
+            <span class="time">03:00 PM – 10:30 PM</span>
+          </li>
+          <li class="hours-item">
+            <span class="day">Sunday</span>
+            <span class="time">03:00 PM – 09:00 PM</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="section-container footer-bottom">
+      <span class="copyright">© 2026 BULLVINO'S BRAZILIAN STEAKHOUSE. ALL RIGHTS RESERVED.</span>
+      <div class="footer-bottom-links">
+        <a href="#" class="footer-bottom-link">PRIVACY POLICY</a>
+        <a href="#" class="footer-bottom-link">TERMS OF SERVICE</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP Core & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Main Interactive Engine -->
+  <script src="js/app.js"></script>
+</body>
+</html>
