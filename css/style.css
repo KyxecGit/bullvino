@@ -1197,6 +1197,9 @@ ul, ol { list-style: none; }
   min-height: 310px;
   display: flex;
   justify-content: center;
+  background: var(--surface);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .opentable-wrap iframe {
