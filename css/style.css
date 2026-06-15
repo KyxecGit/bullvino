@@ -1186,19 +1186,21 @@ ul, ol { list-style: none; }
   margin-bottom: 32px;
 }
 
-.reserve-note {
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 28px;
-}
-
-.btn-opentable {
-  margin-bottom: 24px;
-}
-
 .reserve-phone {
   font-size: 13px;
   color: var(--muted);
+  margin-top: 24px;
+}
+
+.opentable-wrap {
+  margin: 24px auto 0;
+  min-height: 310px;
+  display: flex;
+  justify-content: center;
+}
+
+.opentable-wrap iframe {
+  max-width: 100%;
 }
 
 .reserve-phone a {

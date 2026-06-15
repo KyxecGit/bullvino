@@ -332,11 +332,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* ── OPENTABLE ────────────────────────────────────────── */
-  document.getElementById('opentable-btn').addEventListener('click', () => {
-    openModal('modal-opentable');
-  });
-
   /* ── BANQUET FORM ─────────────────────────────────────── */
   document.getElementById('banquet-form').addEventListener('submit', e => {
     e.preventDefault();
