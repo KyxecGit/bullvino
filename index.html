@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BULLVINO'S | Premium Brazilian Steakhouse</title>
+  <meta name="description" content="Experience Bullvino's: A premium dark luxury temple of authentic Brazilian Churrasco. Fire-roasted cuts carved tableside and masterfully crafted cocktails.">
+  <meta name="keywords" content="Bullvino's, Steakhouse, Churrascaria, Luxury Dining, Brazilian Steakhouse">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring">
+    <span class="cursor-text" id="cursor-text"></span>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="brand-title">BULLVINO'S</span>
+        <span class="brand-subtitle">BRAZILIAN STEAK HOUSE</span>
+      </a>
+      <nav class="nav-links" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#experience" class="nav-link">Our Story</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#reserve" class="nav-link">Reservations</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#reserve" class="btn-nav">RESERVE</a>
+        <button class="burger" id="burger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <video class="hero-video" autoplay loop muted playsinline poster="assets/images/chef_experience.png">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-fire-burning-in-a-black-background-40019-large.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <canvas class="hero-canvas" id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">AUTHENTIC GAUCHO TRADITION</p>
+      <h1 class="hero-title">BULLVINO'S</h1>
+      <p class="hero-subtitle">THE ART OF FIRE &amp; FLESH</p>
+      <div class="hero-line"></div>
+      <a href="#menu" class="btn btn-outline">EXPLORE THE MENU</a>
+    </div>
+    <a href="#experience" class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="hero-scroll-line"></div>
+    </a>
+  </section>
+
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="experience-grid">
+        <div class="experience-visual">
+          <div class="experience-img-wrap">
+            <img src="assets/images/chef_experience.png" alt="Chef roasting Picanha" class="experience-img" id="exp-img">
+          </div>
+          <div class="experience-frame"></div>
+        </div>
+        <div class="experience-body">
+          <span class="eyebrow">OUR HERITAGE</span>
+          <h2 class="section-title">THE GAUCHO<br>WAY OF LIFE</h2>
+          <div class="title-line"></div>
+          <blockquote class="experience-quote">"Fire is our language, and the sword is our canvas."</blockquote>
+          <p class="experience-text">Born in the rugged southern plains of Brazil, the legendary Gaucho culture is defined by its deep relationship with fire, iron, and prime livestock. At Bullvino's, we bring this theatrical heritage directly to your table. Our passadores carve continuous skewers of prime seasoned meats cooked over open natural-wood flames, preserving an ancestral roasting art dating back three centuries.</p>
+          <div class="experience-sig">
+            <span class="sig-name">Chef Roberto Silva</span>
+            <span class="sig-role">Master Passador &amp; Culinary Director</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow center">SENSORY PORTFOLIO</span>
+        <h2 class="section-title center">THE HARVEST</h2>
+        <div class="title-line center"></div>
+        <p class="section-sub">Select a category to explore tableside carvings, exclusive cuts, and liquid alchemy.</p>
+      </div>
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-cat="churrascaria">RODIZIO EXPERIENCE</button>
+        <button class="tab-btn" data-cat="meat-cuts">LIVE-FIRE CUTS</button>
+        <button class="tab-btn" data-cat="cocktails">SIGNATURE COCKTAILS</button>
+      </div>
+      <div class="menu-grid" id="menu-grid"></div>
+    </div>
+  </section>
+
+  <section class="section events-section" id="events">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow center">MEMORABLE MOMENTS</span>
+        <h2 class="section-title center">SPECIAL EVENTS</h2>
+        <div class="title-line center"></div>
+        <p class="section-sub">From weekend brunches to late-night live entertainment.</p>
+      </div>
+      <div class="events-grid">
+        <div class="event-card">
+          <div class="event-icon">&#129346;</div>
+          <h3 class="event-title">WEEKEND BRUNCH</h3>
+          <p class="event-schedule">Friday – Sunday &middot; 11 AM – 4 PM</p>
+          <p class="event-desc">Indulge in our signature Gaucho brunch featuring bottomless mimosas, fire-roasted eggs Benedict, and live acoustic guitar.</p>
+          <a href="#reserve" class="event-link">Reserve Brunch</a>
+        </div>
+        <div class="event-card">
+          <div class="event-icon">&#127927;</div>
+          <h3 class="event-title">LATE NIGHT LIVE</h3>
+          <p class="event-schedule">Friday – Saturday &middot; 10 PM – 1 AM</p>
+          <p class="event-desc">After dinner, stay for live jazz, bossa nova, and DJ sets. Premium cocktails and small plates served until close.</p>
+          <a href="#reserve" class="event-link">Book a Table</a>
+        </div>
+        <div class="event-card">
+          <div class="event-icon">&#127863;</div>
+          <h3 class="event-title">HAPPY HOUR</h3>
+          <p class="event-schedule">Monday – Friday &middot; 3 PM – 4 PM</p>
+          <p class="event-desc">Half-priced signature cocktails, $8 wine pours, and complimentary petiscos — Brazilian tapas at the bar.</p>
+          <a href="#reserve" class="event-link">Join Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section private-section" id="private-dining">
+    <div class="container">
+      <div class="private-grid">
+        <div class="private-info">
+          <span class="eyebrow">EXCLUSIVE EXPERIENCES</span>
+          <h2 class="section-title">PRIVATE DINING<br>&amp; BANQUETS</h2>
+          <div class="title-line"></div>
+          <p class="private-desc">Host your next corporate event, wedding rehearsal, or milestone celebration in our exclusive private dining rooms. Our events team will craft a bespoke menu and atmosphere tailored to your vision.</p>
+          <ul class="private-features">
+            <li>Dedicated event coordinator</li>
+            <li>Customizable multi-course menus</li>
+            <li>Audio-visual equipment available</li>
+            <li>Capacity: 10 – 120 guests</li>
+          </ul>
+        </div>
+        <div class="private-form-card">
+          <div class="corner tl"></div>
+          <div class="corner tr"></div>
+          <div class="corner bl"></div>
+          <div class="corner br"></div>
+          <h3 class="form-heading">REQUEST A BANQUET</h3>
+          <form class="banquet-form" id="banquet-form">
+            <div class="field">
+              <label for="b-name">FULL NAME</label>
+              <input type="text" id="b-name" required placeholder="John Smith">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="b-phone">PHONE</label>
+                <input type="tel" id="b-phone" required placeholder="555-123-4567">
+              </div>
+              <div class="field">
+                <label for="b-email">EMAIL</label>
+                <input type="email" id="b-email" required placeholder="you@example.com">
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="b-date">EVENT DATE</label>
+                <input type="date" id="b-date" required>
+              </div>
+              <div class="field">
+                <label for="b-guests">NUMBER OF GUESTS</label>
+                <input type="number" id="b-guests" required min="1" placeholder="10">
+              </div>
+            </div>
+            <div class="field">
+              <label for="b-comment">COMMENTS</label>
+              <textarea id="b-comment" rows="3" placeholder="Tell us about your event..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-full btn-burgundy">SUBMIT REQUEST</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gifts-section" id="gift-cards">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow center">THE PERFECT GIFT</span>
+        <h2 class="section-title center">GIFT CARDS</h2>
+        <div class="title-line center"></div>
+        <p class="section-sub">Share the Bullvino's experience. Digital gift cards delivered instantly.</p>
+      </div>
+      <div class="gifts-grid">
+        <div class="gift-card">
+          <div class="gift-inner">
+            <span class="gift-brand">BULLVINO'S</span>
+            <span class="gift-label">GIFT CARD</span>
+            <span class="gift-amount">$25</span>
+          </div>
+          <button class="btn btn-outline btn-gift" data-amount="25">BUY NOW</button>
+        </div>
+        <div class="gift-card gift-featured">
+          <div class="gift-badge">POPULAR</div>
+          <div class="gift-inner">
+            <span class="gift-brand">BULLVINO'S</span>
+            <span class="gift-label">GIFT CARD</span>
+            <span class="gift-amount">$50</span>
+          </div>
+          <button class="btn btn-outline btn-gift" data-amount="50">BUY NOW</button>
+        </div>
+        <div class="gift-card">
+          <div class="gift-inner">
+            <span class="gift-brand">BULLVINO'S</span>
+            <span class="gift-label">GIFT CARD</span>
+            <span class="gift-amount">$100</span>
+          </div>
+          <button class="btn btn-outline btn-gift" data-amount="100">BUY NOW</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow center">VISUAL JOURNEY</span>
+        <h2 class="section-title center">GALLERY</h2>
+        <div class="title-line center"></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="Grilled steak" loading="lazy">
+          <div class="gallery-cap"><span>PRIME CUTS</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restaurant interior" loading="lazy">
+          <div class="gallery-cap"><span>DINING ROOM</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Bar area" loading="lazy">
+          <div class="gallery-cap"><span>THE BAR</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=80" alt="Cocktail" loading="lazy">
+          <div class="gallery-cap"><span>COCKTAILS</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80" alt="Chef at work" loading="lazy">
+          <div class="gallery-cap"><span>THE PASSADOR</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80" alt="Fine dining" loading="lazy">
+          <div class="gallery-cap"><span>PLATED PERFECTION</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Ambiance" loading="lazy">
+          <div class="gallery-cap"><span>AMBIANCE</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80" alt="Signature drink" loading="lazy">
+          <div class="gallery-cap"><span>SIGNATURE SERVES</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reserve-section" id="reserve">
+    <div class="reserve-glow"></div>
+    <div class="container">
+      <div class="reserve-card">
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+        <span class="eyebrow center">SECURE YOUR PLACE</span>
+        <h2 class="reserve-title">RESERVE A SEAT<br>BY THE HEARTH</h2>
+        <p class="reserve-desc">Tableside gaucho service operates in highly limited seating tiers. Pre-book your slot to confirm placement near the open wood flames.</p>
+        <p class="reserve-note">Reservations are powered by OpenTable. Click below to check availability.</p>
+        <button class="btn btn-burgundy btn-opentable" id="opentable-btn">
+          <span class="btn-icon">&#127869;</span>
+          RESERVE WITH OPENTABLE
+        </button>
+        <p class="reserve-phone">Or call us directly at <a href="tel:+13317575544">331-757-5544</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="#hero" class="footer-logo">
+            <span class="brand-title">BULLVINO'S</span>
+            <span class="brand-subtitle">BRAZILIAN STEAK HOUSE</span>
+          </a>
+          <p class="footer-desc">An ultra-premium Churrascaria combining centuries of Gaucho rotisserie fire heritage with contemporary culinary art and liquid alchemy.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link">IG</a>
+            <a href="#" class="social-link">FB</a>
+            <a href="#" class="social-link">YT</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">CONTACT</h4>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <span class="footer-icon">&#128205;</span>
+              <span>123 Main Street, City, ST 00000</span>
+            </li>
+            <li class="footer-item">
+              <span class="footer-icon">&#128222;</span>
+              <a href="tel:+13317575544">331-757-5544</a>
+            </li>
+            <li class="footer-item">
+              <span class="footer-icon">&#9993;</span>
+              <span>experience@bullvinos.com</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">HOURS</h4>
+          <ul class="footer-list hours-list">
+            <li class="hours-row">
+              <span class="hours-label">Lunch</span>
+              <span class="hours-val">Fri–Sun 11 AM – 4 PM</span>
+            </li>
+            <li class="hours-row">
+              <span class="hours-label">Dinner</span>
+              <span class="hours-val">Sun–Thu 4 – 9 PM</span>
+            </li>
+            <li class="hours-row">
+              <span class="hours-label">Dinner</span>
+              <span class="hours-val">Fri–Sat 4 – 10 PM</span>
+            </li>
+            <li class="hours-row">
+              <span class="hours-label">Happy Hour</span>
+              <span class="hours-val">Mon–Fri 3 – 4 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="copyright">&copy; 2026 BULLVINO'S BRAZILIAN STEAKHOUSE. ALL RIGHTS RESERVED.</span>
+        <div class="footer-bottom-links">
+          <a href="#">PRIVACY POLICY</a>
+          <a href="#">TERMS OF SERVICE</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal-opentable">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-icon">&#127869;</div>
+      <h3 class="modal-title">OPENTABLE INTEGRATION</h3>
+      <p class="modal-desc">The OpenTable reservation widget will be embedded here in production. This is a placeholder for the live booking interface.</p>
+      <div class="modal-placeholder">
+        <span>OPENTABLE WIDGET AREA</span>
+        <small>Interactive booking calendar loads here</small>
+      </div>
+      <button class="btn btn-burgundy btn-full" data-close>CLOSE</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-notify">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-icon" id="notify-icon">&#10003;</div>
+      <h3 class="modal-title" id="notify-title">SUCCESS</h3>
+      <p class="modal-desc" id="notify-desc">Your action was completed successfully.</p>
+      <button class="btn btn-burgundy btn-full" data-close>GOT IT</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
