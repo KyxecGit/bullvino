@@ -1192,18 +1192,14 @@ ul, ol { list-style: none; }
   margin-top: 24px;
 }
 
-.opentable-wrap {
-  margin: 24px auto 0;
-  min-height: 310px;
-  display: flex;
-  justify-content: center;
-  background: var(--surface);
-  border-radius: 4px;
-  overflow: hidden;
+.reserve-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 28px;
 }
 
-.opentable-wrap iframe {
-  max-width: 100%;
+.btn-reserve-ot {
+  margin-bottom: 20px;
 }
 
 .reserve-phone a {
