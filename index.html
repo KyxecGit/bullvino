@@ -3,17 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BULLVINO'S | Premium Brazilian Steakhouse</title>
-  <meta name="description" content="Experience Bullvino's: A premium dark luxury temple of authentic Brazilian Churrasco. Fire-roasted cuts carved tableside and masterfully crafted cocktails.">
-  <meta name="keywords" content="Bullvino's, Steakhouse, Churrascaria, Luxury Dining, Brazilian Steakhouse">
+  <title>BULLVINO'S | Premium Brazilian Steakhouse in Bolingbrook</title>
+  <meta name="description" content="Bullvino's Brazilian Steakhouse in Bolingbrook — authentic Gaucho churrasco, fire-roasted cuts carved tableside, signature cocktails, and private dining. Reserve your table today.">
+  <meta name="keywords" content="Bullvino's, Brazilian steakhouse, churrascaria, Bolingbrook restaurant, rodizio, picanha, wagyu, gaucho, fire-roasted, private dining, Brazilian BBQ">
+  <meta name="author" content="Bullvino's Brazilian Steakhouse">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.bullvinosillinois.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="BULLVINO'S | Premium Brazilian Steakhouse">
+  <meta property="og:description" content="Authentic Gaucho churrasco in Bolingbrook. Fire-roasted cuts carved tableside, signature cocktails, and private dining.">
+  <meta property="og:url" content="https://www.bullvinosillinois.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80">
+  <meta property="og:site_name" content="Bullvino's Brazilian Steakhouse">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BULLVINO'S | Premium Brazilian Steakhouse">
+  <meta name="twitter:description" content="Authentic Gaucho churrasco in Bolingbrook. Fire-roasted cuts carved tableside, signature cocktails, and private dining.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#060606">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  <link rel="apple-touch-icon" href="assets/images/logo.png">
+
+  <!-- Structured Data: Restaurant Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bullvino's Brazilian Steakhouse",
+    "description": "Premium Brazilian steakhouse serving authentic Gaucho churrasco, fire-roasted cuts carved tableside, signature cocktails, and private dining in Bolingbrook.",
+    "url": "https://www.bullvinosillinois.com/",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80",
+    "servesCuisine": ["Brazilian", "Steakhouse", "Churrascaria", "Barbecue"],
+    "priceRange": "$$$",
+    "telephone": "+1-331-757-5544",
+    "email": "Bolingbrook@bullvinos.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bolingbrook",
+      "addressRegion": "IL",
+      "addressCountry": "US"
+    },
+    "hasMap": "https://maps.app.goo.gl/yXzWSKKeL8oJL4Vq5",
+    "sameAs": [
+      "https://www.instagram.com/bullvinosbolingbrook"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "16:00",
+        "name": "Lunch"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "16:00",
+        "closes": "21:00",
+        "name": "Dinner"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "16:00",
+        "closes": "22:00",
+        "name": "Dinner"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "15:00",
+        "closes": "16:00",
+        "name": "Happy Hour"
+      }
+    ],
+    "acceptsReservations": "True"
+  }
+  </script>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <noscript>
+    <div style="padding: 40px; text-align: center; background: #060606; color: #ccc; font-family: sans-serif;">
+      <h1 style="color: #C39B34; margin-bottom: 16px;">BULLVINO'S BRAZILIAN STEAKHOUSE</h1>
+      <p>Please enable JavaScript to fully experience our website.</p>
+      <p>Contact us: 331-757-5544 | Bolingbrook@bullvinos.com</p>
+    </div>
+  </noscript>
 
   <div class="cursor-dot" id="cursor-dot"></div>
   <div class="cursor-ring" id="cursor-ring">
@@ -74,7 +165,7 @@
       <div class="experience-grid">
         <div class="experience-visual">
           <div class="experience-img-wrap">
-            <img src="assets/images/chef_experience.png" alt="Chef roasting Picanha" class="experience-img" id="exp-img">
+            <img src="assets/images/chef_experience.png" alt="Gaucho chef roasting Picanha over open flame" class="experience-img" id="exp-img" loading="lazy">
           </div>
           <div class="experience-frame"></div>
         </div>
@@ -307,7 +398,7 @@
         <h2 class="reserve-title">RESERVE A SEAT<br>BY THE HEARTH</h2>
         <p class="reserve-desc">Tableside gaucho service operates in highly limited seating tiers. Pre-book your slot to confirm placement near the open wood flames.</p>
         <p class="reserve-note">Powered by OpenTable. Click below to check availability and book instantly.</p>
-        <a href="https://www.opentable.com/booking/restref/availability?restaurantId=1503280&lang=en-US&otSource=Restaurant%20website" target="_blank" rel="noopener noreferrer" class="btn btn-burgundy btn-reserve-ot">
+        <a href="https://www.opentable.com/r/bullvinos-bolingbrook" target="_blank" rel="noopener noreferrer" class="btn btn-burgundy btn-reserve-ot">
           <span class="btn-icon">&#127869;</span>
           RESERVE WITH OPENTABLE
         </a>
@@ -376,8 +467,8 @@
       <div class="footer-bottom">
         <span class="copyright">&copy; 2026 BULLVINO'S BRAZILIAN STEAKHOUSE. ALL RIGHTS RESERVED.</span>
         <div class="footer-bottom-links">
-          <a href="#">PRIVACY POLICY</a>
-          <a href="#">TERMS OF SERVICE</a>
+          <a href="privacy.html">PRIVACY POLICY</a>
+          <a href="terms.html">TERMS OF SERVICE</a>
         </div>
       </div>
     </div>

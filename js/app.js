@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$58',
         sub: 'Continuous Tableside Service',
         desc: 'Our hallmark ritual: a non-stop rotation of over 15 distinct cuts of prime roasted beef, pork, chicken, and lamb carved directly onto your plate by our master passadores.',
-        img: 'assets/images/chef_experience.png',
+        img: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80',
         tags: ['Signature', 'Tableside', 'All-You-Can-Eat']
       },
       {
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$46',
         sub: 'Noble Brazilian Cap of Sirloin',
         desc: 'The classic coarse-salted cut, garlic-infused crust, and direct fire-charred center loin. The crown jewel of Brazilian churrasco.',
-        img: 'assets/images/steak_picanha.png',
+        img: 'https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80',
         tags: ['Popular', 'Rotisserie', 'Bold']
       },
       {
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$135',
         sub: 'Zabuton on Himalayan Salt Block',
         desc: 'The pinnacle of marble score luxury: 8oz of authentic Japanese A5 Wagyu Zabuton, lightly basted and seared tableside over a glowing, mineral-rich pink Himalayan salt slab.',
-        img: 'assets/images/steak_wagyu.png',
+        img: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80',
         tags: ['VIP Choice', 'A5 Wagyu', 'Gourmet'],
         vip: true
       },
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$95',
         sub: '32oz Long-Bone Dry Aged Ribeye',
         desc: 'A colossal dry-aged long-bone ribeye roasted slowly over natural mesquite embers, finished with brushings of smoked bone marrow butter and fresh sea salt.',
-        img: 'assets/images/steak_contra_file.png',
+        img: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=80',
         tags: ['35-Day Dry Aged', 'Fire-Charred', 'Colossal']
       },
       {
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$39',
         sub: 'Noble Loin & Bottom Sirloin Duo',
         desc: 'Two heritage southern roasts: the tender, delicately textured Alcatra top sirloin alongside the intensely robust, marble-seared Fraldinha flank steak.',
-        img: 'assets/images/steak_contra_file.png',
+        img: 'https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=600&q=80',
         tags: ['Southern Heritage', 'Lean', 'Tender']
       },
       {
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$48',
         sub: 'Premium Brazilian Loin Steak',
         desc: 'Individual premium sirloin steak featuring a perfect crust seared thick fat cap, heavily basted with freshly crushed garlic cloves, sea salt, and wild oregano oil.',
-        img: 'assets/images/steak_picanha.png',
+        img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80',
         tags: ['Signature Crust', 'Wood-Fired', 'Garlic']
       }
     ],
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$14',
         sub: 'Fresh Seasonal Greens',
         desc: 'Crisp romaine, arugula, and radicchio tossed with heirloom tomatoes, shaved red onion, and a housemade chimichurri vinaigrette.',
-        img: 'assets/images/cocktail_caipirinha.png',
+        img: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80',
         tags: ['Fresh', 'Vegetarian', 'Chimichurri'],
         glass: true
       },
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$16',
         sub: 'Tropical Palm & Avocado',
         desc: 'Tender hearts of palm layered with sliced avocado, mango, and toasted cashews, drizzled with a lime-cilantro dressing.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1540420773430-2c918764a9a3?w=600&q=80',
         tags: ['Tropical', 'Vegetarian', 'Light'],
         glass: true
       },
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$15',
         sub: 'Charred Beets & Goat Cheese',
         desc: 'Slow-roasted golden and red beets over open flame, served with whipped goat cheese, candied walnuts, and a honey-balsamic glaze.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600&q=80',
         tags: ['Fire-Roasted', 'Vegetarian', 'Sweet & Savory'],
         glass: true
       },
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$17',
         sub: 'Grilled Steak & Romaine',
         desc: 'Grilled picanha strips over crisp romaine, house Caesar dressing, shaved parmesan, and fire-toasted croutons.',
-        img: 'assets/images/steak_picanha.png',
+        img: 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=600&q=80',
         tags: ['With Steak', 'Hearty', 'Classic']
       },
       {
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$13',
         sub: 'Summer Refreshment',
         desc: 'Chilled watermelon cubes with crumbled feta, fresh mint, and a sprinkle of smoked sea salt.',
-        img: 'assets/images/cocktail_caipirinha.png',
+        img: 'https://images.unsplash.com/photo-1465083960061-506b06d6f3d0?w=600&q=80',
         tags: ['Refreshing', 'Vegetarian', 'Seasonal'],
         glass: true
       },
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$15',
         sub: 'Protein-Packed Superfood',
         desc: 'Tri-color quinoa with black beans, corn, avocado, cherry tomatoes, and a zesty lime dressing. Topped with grilled chicken optional.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?w=600&q=80',
         tags: ['Healthy', 'Gluten-Free', 'Protein'],
         glass: true
       }
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$9',
         sub: 'Classic Chocolate Truffles',
         desc: 'Rich condensed milk and cocoa truffles rolled in chocolate sprinkles. A beloved Brazilian birthday tradition.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80',
         tags: ['Traditional', 'Chocolate', 'Sweet'],
         glass: true
       },
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$10',
         sub: 'Coconut Custard Gold',
         desc: 'A glistening golden baked custard made with egg yolks, sugar, and shredded coconut. A jewel of Brazilian dessert heritage.',
-        img: 'assets/images/cocktail_caipirinha.png',
+        img: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80',
         tags: ['Traditional', 'Coconut', 'Baked'],
         glass: true
       },
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$12',
         sub: 'Cinnamon-Sugar Crust',
         desc: 'Whole pineapple slow-roasted over open flame with a caramelized cinnamon-sugar crust. Carved tableside. Our signature closer.',
-        img: 'assets/images/chef_experience.png',
+        img: 'https://images.unsplash.com/photo-1559054663-e8d23213f55c?w=600&q=80',
         tags: ['Signature', 'Fire-Roasted', 'Tableside']
       },
       {
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$9',
         sub: 'Passion Fruit Mousse',
         desc: 'Silky passion fruit mousse with a tangy tropical glaze. Light, refreshing, and perfectly balanced.',
-        img: 'assets/images/cocktail_caipirinha.png',
+        img: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80',
         tags: ['Tropical', 'Light', 'Refreshing'],
         glass: true
       },
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$11',
         sub: 'Three Milk Soaked Sponge',
         desc: 'Vanilla sponge cake soaked in three milks, topped with whipped cream and a caramel drizzle.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1535131199008-57e52fc681fe?w=600&q=80',
         tags: ['Classic', 'Creamy', 'Indulgent'],
         glass: true
       },
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$10',
         sub: 'Brazilian Creamy Papaya',
         desc: 'Blended papaya and cream topped with a torched sugar crust, served with a black currant liqueur drizzle.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1488900128323-21503983a078?w=600&q=80',
         tags: ['Tropical', 'Torched', 'Elegant'],
         glass: true
       }
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$18',
         sub: 'Signature Cachaça Alchemy',
         desc: 'Premium artisanal Velho Barreiro cachaça muddled with organic key limes, pure cane sugar crystals, and crushed ice.',
-        img: 'assets/images/cocktail_caipirinha.png',
+        img: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80',
         tags: ['Traditional', 'Refreshing', 'Lime'],
         glass: true
       },
@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$21',
         sub: 'Infused Crimson Oak Rye',
         desc: 'Wood-aged rye whiskey, sweet vermouth, and bitters, cold-smoked under glass with char-burnt cherrywood embers.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1514362545857-3bc16c4d7d27?w=600&q=80',
         tags: ['Burnt Cherrywood', 'Intense', 'Aged'],
         glass: true
       },
@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$16',
         sub: 'Noble Wine & Brandy Muddle',
         desc: 'Deep red Cabernet wine mixed with premium brandy, orange liqueur, and macerated fresh forest berries.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1546171753-97d7676e4602?w=600&q=80',
         tags: ['Smooth Fruit', 'Wine-Base', 'Refreshing'],
         glass: true
       },
@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$8',
         sub: 'Lime & Condensed Milk',
         desc: 'Blended limes with condensed milk and ice — a creamy, tangy Brazilian classic. Non-alcoholic.',
-        img: 'assets/images/cocktail_caipirinha.png',
+        img: 'https://images.unsplash.com/photo-1497534446932-c925b458314e?w=600&q=80',
         tags: ['Non-Alcoholic', 'Creamy', 'Classic'],
         glass: true
       },
@@ -369,7 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$5',
         sub: 'Brazilian Soda',
         desc: 'The iconic Brazilian soft drink made from guaraná fruit. Crisp, lightly sweet, and naturally caffeinated.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1437418747212-8d9709afab22?w=600&q=80',
         tags: ['Non-Alcoholic', 'Imported', 'Sparkling'],
         glass: true
       },
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
         price: '$14',
         sub: 'Argentine Red Wine Glass',
         desc: 'A bold, full-bodied Argentine Malbec with notes of dark plum, blackberry, and a hint of toasted oak.',
-        img: 'assets/images/cocktail_signature.png',
+        img: 'https://images.unsplash.com/photo-1510812431401-41d2bd482abf?w=600&q=80',
         tags: ['Red Wine', 'Bold', 'Argentine'],
         glass: true
       }
