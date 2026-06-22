@@ -302,9 +302,22 @@ ul, ol { list-style: none; }
 
 .nav-logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   line-height: 1;
   flex-shrink: 0;
+}
+
+.nav-logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .brand-title {
@@ -791,6 +804,64 @@ ul, ol { list-style: none; }
 .glass-card .card-title { color: rgba(255, 255, 255, 0.9); }
 .glass-card:hover { border-color: rgba(255, 255, 255, 0.2); box-shadow: 0 20px 50px rgba(255, 255, 255, 0.06); }
 
+/* ── MENU PDF CARDS ────────────────────────────────────── */
+.menu-pdf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  margin-top: 60px;
+}
+
+.menu-pdf-card {
+  background: var(--surface);
+  border: 1px solid var(--gold-dim);
+  padding: 45px 36px;
+  text-align: center;
+  transition: all 0.5s var(--ease);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-pdf-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px var(--gold-glow);
+}
+
+.menu-pdf-icon {
+  font-size: 40px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.menu-pdf-title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
+.menu-pdf-desc {
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.btn-pdf { padding: 12px 32px; }
+
+@media (max-width: 600px) {
+  .menu-pdf-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 991px) {
+  .nav-logo-text { display: none; }
+  .nav-logo-img { width: 40px; height: 40px; }
+}
+
 /* ── EVENTS ─────────────────────────────────────────────── */
 .events-section { background: var(--bg); }
 
@@ -1227,8 +1298,21 @@ ul, ol { list-style: none; }
 
 .footer-logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 14px;
   margin-bottom: 20px;
+}
+
+.footer-logo-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-desc {

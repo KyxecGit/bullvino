@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,8 +23,11 @@
   <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
-        <span class="brand-title">BULLVINO'S</span>
-        <span class="brand-subtitle">BRAZILIAN STEAK HOUSE</span>
+        <img src="assets/images/logo.png" alt="Bullvino's" class="nav-logo-img">
+        <span class="nav-logo-text">
+          <span class="brand-title">BULLVINO'S</span>
+          <span class="brand-subtitle">BRAZILIAN STEAK HOUSE</span>
+        </span>
       </a>
       <nav class="nav-links" id="nav-menu">
         <a href="#hero" class="nav-link active">Home</a>
@@ -78,11 +83,7 @@
           <h2 class="section-title">THE GAUCHO<br>WAY OF LIFE</h2>
           <div class="title-line"></div>
           <blockquote class="experience-quote">"Fire is our language, and the sword is our canvas."</blockquote>
-          <p class="experience-text">Born in the rugged southern plains of Brazil, the legendary Gaucho culture is defined by its deep relationship with fire, iron, and prime livestock. At Bullvino's, we bring this theatrical heritage directly to your table. Our passadores carve continuous skewers of prime seasoned meats cooked over open natural-wood flames, preserving an ancestral roasting art dating back three centuries.</p>
-          <div class="experience-sig">
-            <span class="sig-name">Chef Roberto Silva</span>
-            <span class="sig-role">Master Passador &amp; Culinary Director</span>
-          </div>
+          <p class="experience-text">At Bullvino's, excellence isn't a standard. It's a way of life. Every fire-roasted cut is hand-selected with the care and conviction of true churrasco craft. From the moment each piece is seasoned and set to the flame, to the ceremonial tableside carving that brings it to your plate, every step of your Bullvino's experience is done with care. This is more than a meal. This is churrasco done right.</p>
         </div>
       </div>
     </div>
@@ -97,11 +98,27 @@
         <p class="section-sub">Select a category to explore tableside carvings, exclusive cuts, and liquid alchemy.</p>
       </div>
       <div class="menu-tabs">
-        <button class="tab-btn active" data-cat="churrascaria">RODIZIO EXPERIENCE</button>
-        <button class="tab-btn" data-cat="meat-cuts">LIVE-FIRE CUTS</button>
-        <button class="tab-btn" data-cat="cocktails">SIGNATURE COCKTAILS</button>
+        <button class="tab-btn active" data-cat="meats">MEATS</button>
+        <button class="tab-btn" data-cat="salads">SALADS</button>
+        <button class="tab-btn" data-cat="desserts">DESSERTS</button>
+        <button class="tab-btn" data-cat="drinks">DRINKS</button>
       </div>
       <div class="menu-grid" id="menu-grid"></div>
+
+      <div class="menu-pdf-row">
+        <div class="menu-pdf-card">
+          <div class="menu-pdf-icon">&#128196;</div>
+          <h3 class="menu-pdf-title">FULL MENU</h3>
+          <p class="menu-pdf-desc">Page 1 — Churrasco, cuts &amp; rodizio</p>
+          <a href="menu1.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-pdf">VIEW PDF</a>
+        </div>
+        <div class="menu-pdf-card">
+          <div class="menu-pdf-icon">&#128196;</div>
+          <h3 class="menu-pdf-title">DRINKS &amp; MORE</h3>
+          <p class="menu-pdf-desc">Page 2 — Cocktails, wine &amp; desserts</p>
+          <a href="menu2.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-pdf">VIEW PDF</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -304,14 +321,17 @@
       <div class="footer-grid">
         <div class="footer-col footer-about">
           <a href="#hero" class="footer-logo">
-            <span class="brand-title">BULLVINO'S</span>
-            <span class="brand-subtitle">BRAZILIAN STEAK HOUSE</span>
+            <img src="assets/images/logo.png" alt="Bullvino's" class="footer-logo-img">
+            <span class="footer-logo-text">
+              <span class="brand-title">BULLVINO'S</span>
+              <span class="brand-subtitle">BRAZILIAN STEAK HOUSE</span>
+            </span>
           </a>
           <p class="footer-desc">An ultra-premium Churrascaria combining centuries of Gaucho rotisserie fire heritage with contemporary culinary art and liquid alchemy.</p>
           <div class="footer-socials">
-            <a href="#" class="social-link">IG</a>
-            <a href="#" class="social-link">FB</a>
-            <a href="#" class="social-link">YT</a>
+            <a href="https://www.instagram.com/bullvinosbolingbrook?igsh=MjlwdmtrODZzZzIz&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-link">IG</a>
+            <a href="https://maps.app.goo.gl/yXzWSKKeL8oJL4Vq5?g_st=it" target="_blank" rel="noopener noreferrer" class="social-link">MAP</a>
+            <a href="mailto:Bolingbrook@bullvinos.com" class="social-link">✉</a>
           </div>
         </div>
         <div class="footer-col">
@@ -319,15 +339,15 @@
           <ul class="footer-list">
             <li class="footer-item">
               <span class="footer-icon">&#128205;</span>
-              <span>123 Main Street, City, ST 00000</span>
-            </li>
-            <li class="footer-item">
-              <span class="footer-icon">&#128222;</span>
-              <a href="tel:+13317575544">331-757-5544</a>
+              <a href="https://maps.app.goo.gl/yXzWSKKeL8oJL4Vq5?g_st=it" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
             </li>
             <li class="footer-item">
               <span class="footer-icon">&#9993;</span>
-              <span>experience@bullvinos.com</span>
+              <a href="mailto:Bolingbrook@bullvinos.com">Bolingbrook@bullvinos.com</a>
+            </li>
+            <li class="footer-item">
+              <span class="footer-icon">&#128247;</span>
+              <a href="https://www.instagram.com/bullvinosbolingbrook?igsh=MjlwdmtrODZzZzIz&utm_source=qr" target="_blank" rel="noopener noreferrer">@bullvinosbolingbrook</a>
             </li>
           </ul>
         </div>

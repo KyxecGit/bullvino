@@ -166,33 +166,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── MENU DATA ────────────────────────────────────────── */
   const menuData = {
-    'churrascaria': [
+    'meats': [
       {
         title: 'The Full Gaucho Rodizio',
         price: '$58',
         sub: 'Continuous Tableside Service',
         desc: 'Our hallmark ritual: a non-stop rotation of over 15 distinct cuts of prime roasted beef, pork, chicken, and lamb carved directly onto your plate by our master passadores.',
         img: 'assets/images/chef_experience.png',
-        tags: ['Signature', 'Tableside', 'Traditional']
+        tags: ['Signature', 'Tableside', 'All-You-Can-Eat']
       },
       {
-        title: 'Prime Picanha Sequence',
+        title: 'Prime Picanha',
         price: '$46',
         sub: 'Noble Brazilian Cap of Sirloin',
-        desc: 'A dedicated progression highlighting the finest Picanha roasts. The classic coarse-salted cut, the garlic-infused crust, and the direct fire-charred center loin.',
+        desc: 'The classic coarse-salted cut, garlic-infused crust, and direct fire-charred center loin. The crown jewel of Brazilian churrasco.',
         img: 'assets/images/steak_picanha.png',
         tags: ['Popular', 'Rotisserie', 'Bold']
       },
-      {
-        title: 'Alcatra & Fraldinha',
-        price: '$39',
-        sub: 'Noble Loin & Bottom Sirloin Duo',
-        desc: 'Two heritage southern roasts: the tender, delicately textured Alcatra top sirloin alongside the intensely robust, marble-seared Fraldinha flank steak.',
-        img: 'assets/images/steak_contra_file.png',
-        tags: ['Southern Heritage', 'Lean', 'Tender']
-      }
-    ],
-    'meat-cuts': [
       {
         title: 'A5 Wagyu Zabuton',
         price: '$135',
@@ -211,6 +201,14 @@ document.addEventListener('DOMContentLoaded', () => {
         tags: ['35-Day Dry Aged', 'Fire-Charred', 'Colossal']
       },
       {
+        title: 'Alcatra & Fraldinha',
+        price: '$39',
+        sub: 'Noble Loin & Bottom Sirloin Duo',
+        desc: 'Two heritage southern roasts: the tender, delicately textured Alcatra top sirloin alongside the intensely robust, marble-seared Fraldinha flank steak.',
+        img: 'assets/images/steak_contra_file.png',
+        tags: ['Southern Heritage', 'Lean', 'Tender']
+      },
+      {
         title: 'Noble Garlic Picanha',
         price: '$48',
         sub: 'Premium Brazilian Loin Steak',
@@ -219,12 +217,122 @@ document.addEventListener('DOMContentLoaded', () => {
         tags: ['Signature Crust', 'Wood-Fired', 'Garlic']
       }
     ],
-    'cocktails': [
+    'salads': [
+      {
+        title: 'Gaucho Garden Salad',
+        price: '$14',
+        sub: 'Fresh Seasonal Greens',
+        desc: 'Crisp romaine, arugula, and radicchio tossed with heirloom tomatoes, shaved red onion, and a housemade chimichurri vinaigrette.',
+        img: 'assets/images/cocktail_caipirinha.png',
+        tags: ['Fresh', 'Vegetarian', 'Chimichurri'],
+        glass: true
+      },
+      {
+        title: 'Brazilian Hearts of Palm',
+        price: '$16',
+        sub: 'Tropical Palm & Avocado',
+        desc: 'Tender hearts of palm layered with sliced avocado, mango, and toasted cashews, drizzled with a lime-cilantro dressing.',
+        img: 'assets/images/cocktail_signature.png',
+        tags: ['Tropical', 'Vegetarian', 'Light'],
+        glass: true
+      },
+      {
+        title: 'Fire-Roasted Beet Salad',
+        price: '$15',
+        sub: 'Charred Beets & Goat Cheese',
+        desc: 'Slow-roasted golden and red beets over open flame, served with whipped goat cheese, candied walnuts, and a honey-balsamic glaze.',
+        img: 'assets/images/cocktail_signature.png',
+        tags: ['Fire-Roasted', 'Vegetarian', 'Sweet & Savory'],
+        glass: true
+      },
+      {
+        title: 'Caesar de Churrasco',
+        price: '$17',
+        sub: 'Grilled Steak & Romaine',
+        desc: 'Grilled picanha strips over crisp romaine, house Caesar dressing, shaved parmesan, and fire-toasted croutons.',
+        img: 'assets/images/steak_picanha.png',
+        tags: ['With Steak', 'Hearty', 'Classic']
+      },
+      {
+        title: 'Watermelon & Feta',
+        price: '$13',
+        sub: 'Summer Refreshment',
+        desc: 'Chilled watermelon cubes with crumbled feta, fresh mint, and a sprinkle of smoked sea salt.',
+        img: 'assets/images/cocktail_caipirinha.png',
+        tags: ['Refreshing', 'Vegetarian', 'Seasonal'],
+        glass: true
+      },
+      {
+        title: 'South American Quinoa',
+        price: '$15',
+        sub: 'Protein-Packed Superfood',
+        desc: 'Tri-color quinoa with black beans, corn, avocado, cherry tomatoes, and a zesty lime dressing. Topped with grilled chicken optional.',
+        img: 'assets/images/cocktail_signature.png',
+        tags: ['Healthy', 'Gluten-Free', 'Protein'],
+        glass: true
+      }
+    ],
+    'desserts': [
+      {
+        title: 'Brazilian Brigadeiro',
+        price: '$9',
+        sub: 'Classic Chocolate Truffles',
+        desc: 'Rich condensed milk and cocoa truffles rolled in chocolate sprinkles. A beloved Brazilian birthday tradition.',
+        img: 'assets/images/cocktail_signature.png',
+        tags: ['Traditional', 'Chocolate', 'Sweet'],
+        glass: true
+      },
+      {
+        title: 'Quindim',
+        price: '$10',
+        sub: 'Coconut Custard Gold',
+        desc: 'A glistening golden baked custard made with egg yolks, sugar, and shredded coconut. A jewel of Brazilian dessert heritage.',
+        img: 'assets/images/cocktail_caipirinha.png',
+        tags: ['Traditional', 'Coconut', 'Baked'],
+        glass: true
+      },
+      {
+        title: 'Flame-Roasted Pineapple',
+        price: '$12',
+        sub: 'Cinnamon-Sugar Crust',
+        desc: 'Whole pineapple slow-roasted over open flame with a caramelized cinnamon-sugar crust. Carved tableside. Our signature closer.',
+        img: 'assets/images/chef_experience.png',
+        tags: ['Signature', 'Fire-Roasted', 'Tableside']
+      },
+      {
+        title: 'Mousse de Maracujá',
+        price: '$9',
+        sub: 'Passion Fruit Mousse',
+        desc: 'Silky passion fruit mousse with a tangy tropical glaze. Light, refreshing, and perfectly balanced.',
+        img: 'assets/images/cocktail_caipirinha.png',
+        tags: ['Tropical', 'Light', 'Refreshing'],
+        glass: true
+      },
+      {
+        title: 'Tres Leches Cake',
+        price: '$11',
+        sub: 'Three Milk Soaked Sponge',
+        desc: 'Vanilla sponge cake soaked in three milks, topped with whipped cream and a caramel drizzle.',
+        img: 'assets/images/cocktail_signature.png',
+        tags: ['Classic', 'Creamy', 'Indulgent'],
+        glass: true
+      },
+      {
+        title: 'Brûléed Papaya Cream',
+        price: '$10',
+        sub: 'Brazilian Creamy Papaya',
+        desc: 'Blended papaya and cream topped with a torched sugar crust, served with a black currant liqueur drizzle.',
+        img: 'assets/images/cocktail_signature.png',
+        tags: ['Tropical', 'Torched', 'Elegant'],
+        glass: true
+      }
+    ],
+    'drinks': [
       {
         title: 'Imperial Caipirinha',
         price: '$18',
         sub: 'Signature Cachaça Alchemy',
-        desc: 'The ultimate national cocktail: premium artisanal Velho Barreiro cachaça muddled vigorously with matted organic key limes, pure cane sugar crystals, and crushed ice.',
+        desc: 'Premium artisanal Velho Barreiro cachaça muddled with organic key limes, pure cane sugar crystals, and crushed ice.',
         img: 'assets/images/cocktail_caipirinha.png',
         tags: ['Traditional', 'Refreshing', 'Lime'],
         glass: true
@@ -233,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
         title: 'Hearth Smoke Manhattan',
         price: '$21',
         sub: 'Infused Crimson Oak Rye',
-        desc: 'Premium wood-aged rye whiskey, sweet Vermouth, and bitters, locked and cold-smoked under glass with char-burnt cherrywood embers, served in a crystal snifter.',
+        desc: 'Wood-aged rye whiskey, sweet vermouth, and bitters, cold-smoked under glass with char-burnt cherrywood embers.',
         img: 'assets/images/cocktail_signature.png',
         tags: ['Burnt Cherrywood', 'Intense', 'Aged'],
         glass: true
@@ -242,9 +350,36 @@ document.addEventListener('DOMContentLoaded', () => {
         title: 'Burgundy Velvet Sangria',
         price: '$16',
         sub: 'Noble Wine & Brandy Muddle',
-        desc: 'Deep rich red Cabernet wine mixed with premium brandy, splash of orange liqueur, and macerated fresh forest berries, garnished with burnt rosemary sprigs.',
+        desc: 'Deep red Cabernet wine mixed with premium brandy, orange liqueur, and macerated fresh forest berries.',
         img: 'assets/images/cocktail_signature.png',
         tags: ['Smooth Fruit', 'Wine-Base', 'Refreshing'],
+        glass: true
+      },
+      {
+        title: 'Brazilian Lemonade',
+        price: '$8',
+        sub: 'Lime & Condensed Milk',
+        desc: 'Blended limes with condensed milk and ice — a creamy, tangy Brazilian classic. Non-alcoholic.',
+        img: 'assets/images/cocktail_caipirinha.png',
+        tags: ['Non-Alcoholic', 'Creamy', 'Classic'],
+        glass: true
+      },
+      {
+        title: 'Guaraná Antarctica',
+        price: '$5',
+        sub: 'Brazilian Soda',
+        desc: 'The iconic Brazilian soft drink made from guaraná fruit. Crisp, lightly sweet, and naturally caffeinated.',
+        img: 'assets/images/cocktail_signature.png',
+        tags: ['Non-Alcoholic', 'Imported', 'Sparkling'],
+        glass: true
+      },
+      {
+        title: 'Malbec de Mendoza',
+        price: '$14',
+        sub: 'Argentine Red Wine Glass',
+        desc: 'A bold, full-bodied Argentine Malbec with notes of dark plum, blackberry, and a hint of toasted oak.',
+        img: 'assets/images/cocktail_signature.png',
+        tags: ['Red Wine', 'Bold', 'Argentine'],
         glass: true
       }
     ]
@@ -296,7 +431,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  renderMenu('churrascaria');
+  renderMenu('meats');
 
   /* ── MODAL SYSTEM ─────────────────────────────────────── */
   function openModal(id) {
