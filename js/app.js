@@ -168,218 +168,80 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuData = {
     'meats': [
       {
-        title: 'The Full Gaucho Rodizio',
-        price: '$58',
-        sub: 'Continuous Tableside Service',
-        desc: 'Our hallmark ritual: a non-stop rotation of over 15 distinct cuts of prime roasted beef, pork, chicken, and lamb carved directly onto your plate by our master passadores.',
-        img: 'Media/галерея/гриль_шураско_огонь.jpg',
-        tags: ['Signature', 'Tableside', 'All-You-Can-Eat']
-      },
-      {
-        title: 'Prime Picanha',
+        title: 'Picanha',
         price: '$46',
-        sub: 'Noble Brazilian Cap of Sirloin',
+        sub: 'Prime Part of the Top Sirloin',
         desc: 'The classic coarse-salted cut, garlic-infused crust, and direct fire-charred center loin. The crown jewel of Brazilian churrasco.',
         img: 'Media/меню/мясо/пиканья_стейк_1.jpg',
-        tags: ['Popular', 'Rotisserie', 'Bold']
+        tags: ['Signature', 'Rotisserie', 'Bold']
       },
       {
-        title: 'A5 Wagyu Zabuton',
-        price: '$135',
-        sub: 'Zabuton on Himalayan Salt Block',
-        desc: 'The pinnacle of marble score luxury: 8oz of authentic Japanese A5 Wagyu Zabuton, lightly basted and seared tableside over a glowing, mineral-rich pink Himalayan salt slab.',
-        img: 'Media/меню/мясо/стейк_рибай_1.jpg',
-        tags: ['VIP Choice', 'A5 Wagyu', 'Gourmet'],
-        vip: true
-      },
-      {
-        title: 'The Charcoal Tomahawk',
-        price: '$95',
-        sub: '32oz Long-Bone Dry Aged Ribeye',
-        desc: 'A colossal dry-aged long-bone ribeye roasted slowly over natural mesquite embers, finished with brushings of smoked bone marrow butter and fresh sea salt.',
-        img: 'Media/меню/мясо/говяжьи_ребрышки.jpg',
-        tags: ['35-Day Dry Aged', 'Fire-Charred', 'Colossal']
-      },
-      {
-        title: 'Alcatra & Fraldinha',
-        price: '$39',
-        sub: 'Noble Loin & Bottom Sirloin Duo',
-        desc: 'Two heritage southern roasts: the tender, delicately textured Alcatra top sirloin alongside the intensely robust, marble-seared Fraldinha flank steak.',
-        img: 'Media/меню/мясо/фральдинья_стейк.jpg',
-        tags: ['Southern Heritage', 'Lean', 'Tender']
-      },
-      {
-        title: 'Noble Garlic Picanha',
+        title: 'Contra Filé',
         price: '$48',
-        sub: 'Premium Brazilian Loin Steak',
-        desc: 'Individual premium sirloin steak featuring a perfect crust seared thick fat cap, heavily basted with freshly crushed garlic cloves, sea salt, and wild oregano oil.',
-        img: 'Media/меню/мясо/чесночная_говядина.jpg',
-        tags: ['Signature Crust', 'Wood-Fired', 'Garlic']
-      }
-    ],
-    'salads': [
-      {
-        title: 'Gaucho Garden Salad',
-        price: '$14',
-        sub: 'Fresh Seasonal Greens',
-        desc: 'Crisp romaine, arugula, and radicchio tossed with heirloom tomatoes, shaved red onion, and a housemade chimichurri vinaigrette.',
-        img: 'Media/меню/салат-бар_и_гарниры/салат_бар_салат_с_зеленью.jpg',
-        tags: ['Fresh', 'Vegetarian', 'Chimichurri'],
-        glass: true
+        sub: 'Ribeye',
+        desc: 'A tender, rich and flavorful cut roasted slowly over natural mesquite embers, finished with brushings of garlic butter.',
+        img: 'Media/меню/мясо/стейк_рибай_1.jpg',
+        tags: ['Popular', 'Fire-Charred', 'Juicy']
       },
       {
-        title: 'Brazilian Hearts of Palm',
-        price: '$16',
-        sub: 'Tropical Palm & Avocado',
-        desc: 'Tender hearts of palm layered with sliced avocado, mango, and toasted cashews, drizzled with a lime-cilantro dressing.',
-        img: 'Media/меню/салат-бар_и_гарниры/нарезка_сыров_и_баклажанов.jpg',
-        tags: ['Tropical', 'Vegetarian', 'Light'],
-        glass: true
+        title: 'Filet Mignon',
+        price: '$52',
+        sub: 'Tenderloin',
+        desc: 'Delicate, ultra-tender beef tenderloin medallions roasted over open fire, seasoned with rock salt and fresh herbs.',
+        img: 'Media/меню/мясо/филе_миньон_1.jpg',
+        tags: ['Lean', 'Tender', 'Premium']
       },
       {
-        title: 'Fire-Roasted Beet Salad',
-        price: '$15',
-        sub: 'Charred Beets & Goat Cheese',
-        desc: 'Slow-roasted golden and red beets over open flame, served with whipped goat cheese, candied walnuts, and a honey-balsamic glaze.',
-        img: 'Media/меню/салат-бар_и_гарниры/салат_бар_перцы_и_баклажаны.jpg',
-        tags: ['Fire-Roasted', 'Vegetarian', 'Sweet & Savory'],
-        glass: true
+        title: 'Fraldinha',
+        price: '$39',
+        sub: 'Bottom Sirloin',
+        desc: 'An intensely robust and flavorful marbled cut from the bottom sirloin, roasted over hot mesquite coals.',
+        img: 'Media/меню/мясо/фральдинья_стейк.jpg',
+        tags: ['Southern Heritage', 'Bold Flavor', 'Chef Select']
       },
       {
-        title: 'Caesar de Churrasco',
-        price: '$17',
-        sub: 'Grilled Steak & Romaine',
-        desc: 'Grilled picanha strips over crisp romaine, house Caesar dressing, shaved parmesan, and fire-toasted croutons.',
-        img: 'Media/меню/салат-бар_и_гарниры/салат_бар_мясная_нарезка_и_зелень.jpg',
-        tags: ['With Steak', 'Hearty', 'Classic']
+        title: 'Cordeiro',
+        price: '$49',
+        sub: 'Lamb Steak & Chops',
+        desc: 'Delicious flame-roasted tender lamb chops and steak marinated with white wine, fresh mint, and lemon.',
+        img: 'Media/меню/мясо/каре_ягненка_1.jpg',
+        tags: ['Herb-Marinated', 'Wood-Fired', 'Tender']
       },
       {
-        title: 'Watermelon & Feta',
-        price: '$13',
-        sub: 'Summer Refreshment',
-        desc: 'Chilled watermelon cubes with crumbled feta, fresh mint, and a sprinkle of smoked sea salt.',
-        img: 'Media/меню/салат-бар_и_гарниры/салат_бар_оливки_и_сыры.jpg',
-        tags: ['Refreshing', 'Vegetarian', 'Seasonal'],
-        glass: true
-      },
-      {
-        title: 'South American Quinoa',
-        price: '$15',
-        sub: 'Protein-Packed Superfood',
-        desc: 'Tri-color quinoa with black beans, corn, avocado, cherry tomatoes, and a zesty lime dressing. Topped with grilled chicken optional.',
-        img: 'Media/меню/салат-бар_и_гарниры/салат_бар_овощные_блюда.jpg',
-        tags: ['Healthy', 'Gluten-Free', 'Protein'],
-        glass: true
-      }
-    ],
-    'desserts': [
-      {
-        title: 'Brazilian Brigadeiro',
-        price: '$9',
-        sub: 'Classic Chocolate Truffles',
-        desc: 'Rich condensed milk and cocoa truffles rolled in chocolate sprinkles. A beloved Brazilian birthday tradition.',
-        img: 'Media/меню/десерты/шоколадный_фондан.jpg',
-        tags: ['Traditional', 'Chocolate', 'Sweet'],
-        glass: true
-      },
-      {
-        title: 'Quindim',
-        price: '$10',
-        sub: 'Coconut Custard Gold',
-        desc: 'A glistening golden baked custard made with egg yolks, sugar, and shredded coconut. A jewel of Brazilian dessert heritage.',
-        img: 'Media/меню/десерты/крем_брюле.jpg',
-        tags: ['Traditional', 'Coconut', 'Baked'],
-        glass: true
-      },
-      {
-        title: 'Flame-Roasted Pineapple',
-        price: '$12',
-        sub: 'Cinnamon-Sugar Crust',
-        desc: 'Whole pineapple slow-roasted over open flame with a caramelized cinnamon-sugar crust. Carved tableside. Our signature closer.',
-        img: 'Media/меню/салат-бар_и_гарниры/ананас_гриль_1.jpg',
-        tags: ['Signature', 'Fire-Roasted', 'Tableside']
-      },
-      {
-        title: 'Mousse de Maracujá',
-        price: '$9',
-        sub: 'Passion Fruit Mousse',
-        desc: 'Silky passion fruit mousse with a tangy tropical glaze. Light, refreshing, and perfectly balanced.',
-        img: 'Media/меню/десерты/чизкейк_нью_йорк.jpg',
-        tags: ['Tropical', 'Light', 'Refreshing'],
-        glass: true
-      },
-      {
-        title: 'Tres Leches Cake',
-        price: '$11',
-        sub: 'Three Milk Soaked Sponge',
-        desc: 'Vanilla sponge cake soaked in three milks, topped with whipped cream and a caramel drizzle.',
-        img: 'Media/меню/десерты/шоколадный_фондан_разрез.jpg',
-        tags: ['Classic', 'Creamy', 'Indulgent'],
-        glass: true
-      },
-      {
-        title: 'Brûléed Papaya Cream',
-        price: '$10',
-        sub: 'Brazilian Creamy Papaya',
-        desc: 'Blended papaya and cream topped with a torched sugar crust, served with a black currant liqueur drizzle.',
-        img: 'Media/меню/десерты/фламбе_чизкейк_с_огнем.jpg',
-        tags: ['Tropical', 'Torched', 'Elegant'],
-        glass: true
+        title: 'Costela Bovina',
+        price: '$45',
+        sub: 'Beef Ribs',
+        desc: 'Colossal beef ribs roasted slowly for hours over natural embers, yielding tender, fall-off-the-bone texture.',
+        img: 'Media/меню/мясо/говяжьи_ребрышки.jpg',
+        tags: ['Slow-Roasted', 'Bone-in', 'Classic']
       }
     ],
     'drinks': [
       {
-        title: 'Imperial Caipirinha',
-        price: '$18',
-        sub: 'Signature Cachaça Alchemy',
-        desc: 'Premium artisanal Velho Barreiro cachaça muddled with organic key limes, pure cane sugar crystals, and crushed ice.',
+        title: 'Traditional Caipirinha',
+        price: '$15',
+        sub: 'Original Brazilian Caipirinha',
+        desc: 'The national cocktail of Brazil: Leblon Cachaça, fresh muddled key lime, and pure cane sugar, shaken with ice.',
         img: 'Media/меню/напитки/коктейль_кайпиринья_1.jpg',
         tags: ['Traditional', 'Refreshing', 'Lime'],
         glass: true
       },
       {
-        title: 'Hearth Smoke Manhattan',
-        price: '$21',
-        sub: 'Infused Crimson Oak Rye',
-        desc: 'Wood-aged rye whiskey, sweet vermouth, and bitters, cold-smoked under glass with char-burnt cherrywood embers.',
-        img: 'Media/меню/напитки/виски_коктейль.jpg',
-        tags: ['Burnt Cherrywood', 'Intense', 'Aged'],
-        glass: true
-      },
-      {
-        title: 'Burgundy Velvet Sangria',
+        title: 'Infused Caipirinha',
         price: '$16',
-        sub: 'Noble Wine & Brandy Muddle',
-        desc: 'Deep red Cabernet wine mixed with premium brandy, orange liqueur, and macerated fresh forest berries.',
-        img: 'Media/меню/напитки/коктейль_шамбор.jpg',
-        tags: ['Smooth Fruit', 'Wine-Base', 'Refreshing'],
-        glass: true
-      },
-      {
-        title: 'Brazilian Lemonade',
-        price: '$8',
-        sub: 'Lime & Condensed Milk',
-        desc: 'Blended limes with condensed milk and ice — a creamy, tangy Brazilian classic. Non-alcoholic.',
-        img: 'Media/меню/напитки/молочный_коктейль_фруктовый.jpg',
-        tags: ['Non-Alcoholic', 'Creamy', 'Classic'],
-        glass: true
-      },
-      {
-        title: 'Guaraná Antarctica',
-        price: '$5',
-        sub: 'Brazilian Soda',
-        desc: 'The iconic Brazilian soft drink made from guaraná fruit. Crisp, lightly sweet, and naturally caffeinated.',
-        img: 'Media/меню/напитки/коктейль_оранжевый_с_цитрусом.jpg',
-        tags: ['Non-Alcoholic', 'Imported', 'Sparkling'],
-        glass: true
-      },
-      {
-        title: 'Malbec de Mendoza',
-        price: '$14',
-        sub: 'Argentine Red Wine Glass',
-        desc: 'A bold, full-bodied Argentine Malbec with notes of dark plum, blackberry, and a hint of toasted oak.',
+        sub: 'Artisanal Fruit Flavors',
+        desc: 'Our signature Caipirinha infused with your choice of premium fresh fruits: Pineapple Mint, Berry, Guava, or Passion Fruit.',
         img: 'Media/меню/напитки/коктейли_кайпиринья_пара.jpg',
-        tags: ['Red Wine', 'Bold', 'Argentine'],
+        tags: ['Fruit-Infused', 'Customizable', 'Vibrant'],
+        glass: true
+      },
+      {
+        title: 'Bullvino\'s Old Fashioned',
+        price: '$18',
+        sub: 'Maker\'s Mark & Maple',
+        desc: 'A premium twist on the classic: Maker\'s Mark Bourbon, pure organic maple syrup, and Angostura bitters, served over a crystal sphere.',
+        img: 'Media/меню/напитки/виски_коктейль.jpg',
+        tags: ['Bourbon', 'Smooth', 'Smoked'],
         glass: true
       }
     ]
@@ -391,6 +253,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderMenu(cat) {
     menuGrid.innerHTML = '';
+    menuGrid.className = 'menu-grid';
+
+    if (cat === 'salads') {
+      menuGrid.classList.add('salads-special-layout');
+      menuGrid.innerHTML = `
+        <div class="salads-special-container">
+          <div class="salads-special-visual">
+            <div class="salads-special-image-wrap">
+              <img src="Media/меню/салат-бар_и_гарниры/салат_бар_вертикальный_1.jpg" alt="Salad Bar & Sides" class="salads-special-img" loading="lazy">
+            </div>
+            <div class="salads-special-frame"></div>
+          </div>
+          <div class="salads-special-content">
+            <span class="card-sub">Gourmet Market Table</span>
+            <h3 class="salads-special-title">THE HARVEST TABLE &amp; SIDES</h3>
+            <p class="salads-special-desc">Complement your rodizio experience with our fresh salad bar and warm, traditional Brazilian side dishes brought directly to your table.</p>
+            <ul class="salads-items-list">
+              <li>
+                <div class="salads-item-header">
+                  <span class="salads-item-name">Pão de Queijo</span>
+                  <span class="salads-item-badge">Warm Side</span>
+                </div>
+                <p class="salads-item-desc">Traditional gluten-free cheese bread, soft on the inside with a golden parmesan crust.</p>
+              </li>
+              <li>
+                <div class="salads-item-header">
+                  <span class="salads-item-name">Crispy Polenta</span>
+                  <span class="salads-item-badge">Warm Side</span>
+                </div>
+                <p class="salads-item-desc">Golden, crispy-fried polenta blocks dusted with fresh grated parmesan cheese.</p>
+              </li>
+              <li>
+                <div class="salads-item-header">
+                  <span class="salads-item-name">Mashed Potatoes</span>
+                  <span class="salads-item-badge">Warm Side</span>
+                </div>
+                <p class="salads-item-desc">Rich and velvety garlic-whipped potatoes cooked to a smooth texture.</p>
+              </li>
+              <li>
+                <div class="salads-item-header">
+                  <span class="salads-item-name">Caramelized Bananas</span>
+                  <span class="salads-item-badge">Warm Side</span>
+                </div>
+                <p class="salads-item-desc">Sweet, flame-caramelized bananas dusted with ground cinnamon.</p>
+              </li>
+              <li>
+                <div class="salads-item-header">
+                  <span class="salads-item-name">Feijoada Bar</span>
+                  <span class="salads-item-badge">Market Table</span>
+                </div>
+                <p class="salads-item-desc">Traditional Brazilian black bean stew simmered with smoked pork, beef, sausages, and spices.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      `;
+      if (window._bindCursorHover) window._bindCursorHover();
+      return;
+    }
+
     const items = menuData[cat] || [];
 
     items.forEach(item => {
